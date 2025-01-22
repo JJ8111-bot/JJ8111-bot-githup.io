@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://img5.pic.in.th/file/secure-sv1/1000001005.jpg') no-repeat center center/cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00aaff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        header a {
+            font-size: 1rem;
+            color: #00aaff;
+            text-decoration: none;
+            animation: fadeIn 3s ease-in-out;
+        }
+        header a:hover {
+            color: #ffaa00;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(31, 46, 71, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #00aaff;
+        }
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #00aaff;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #ffaa00;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img5.pic.in.th/file/secure-sv1/1000001005.jpg" alt="Profile Picture">
+        <h1>Hi, I'm James</h1>
+        <p>Tutor | Problem solver | Web manager</p>
+        <a>If you can not explain something in simple terms, you don't understand it. The best way to learn is to teach.</a>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hello! everyone, I'm James. Now I'm studying in grade 10 (GSMP17) at Rajsima Wittayalai School. I'm working on my website named Edutopia. It's a website about education where everyone can study (coming soon). Hope you guys will enjoy it.</p>
+        </div>
+        <div class="card">
+            <h2>My Skills</h2>
+            <p>- Skill 1: Web Development <br>
+               - Skill 2: Teaching Math and Physics <br>
+               - Skill 3: Public Speaking</p>
+        </div>
+        <div class="card">
+            <h2>Hobbies</h2>
+            <p>In my free time, I enjoy reading, web designing, and playing guitar. They keep me inspired and energized to tackle new challenges.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <p>Let's connect:</p>
+        <a href="https://www.instagram.com/rutdanai_james?igsh=MXJkN3F5MXp2bmxlYQ==" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/physics_with_coachj?igsh=dXplcWk3YXg0bnNz">Study Instagram</a>
+    </div>
+</body>
+</html>
